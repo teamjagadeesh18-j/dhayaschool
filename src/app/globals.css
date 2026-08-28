@@ -1,3 +1,23 @@
+
+/* Global Smooth Performance Optimizations */
+html {
+  scroll-behavior: smooth !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Fluid Hardware Acceleration Helpers */
+.gpu-accelerate {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
